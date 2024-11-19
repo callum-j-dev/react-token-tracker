@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/callum-j-dev/react-token-tracker/static/css/main.314dbace.css",
-    "main.js": "/callum-j-dev/react-token-tracker/static/js/main.19649c8e.js",
-    "static/js/453.a34a7d6f.chunk.js": "/callum-j-dev/react-token-tracker/static/js/453.a34a7d6f.chunk.js",
-    "index.html": "/callum-j-dev/react-token-tracker/index.html",
-    "main.314dbace.css.map": "/callum-j-dev/react-token-tracker/static/css/main.314dbace.css.map",
-    "main.19649c8e.js.map": "/callum-j-dev/react-token-tracker/static/js/main.19649c8e.js.map",
-    "453.a34a7d6f.chunk.js.map": "/callum-j-dev/react-token-tracker/static/js/453.a34a7d6f.chunk.js.map"
+    "main.css": "/react-token-tracker/static/css/main.314dbace.css",
+    "main.js": "/react-token-tracker/static/js/main.73e19a18.js",
+    "static/js/453.a34a7d6f.chunk.js": "/react-token-tracker/static/js/453.a34a7d6f.chunk.js",
+    "index.html": "/react-token-tracker/index.html",
+    "main.314dbace.css.map": "/react-token-tracker/static/css/main.314dbace.css.map",
+    "main.73e19a18.js.map": "/react-token-tracker/static/js/main.73e19a18.js.map",
+    "453.a34a7d6f.chunk.js.map": "/react-token-tracker/static/js/453.a34a7d6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.314dbace.css",
-    "static/js/main.19649c8e.js"
+    "static/js/main.73e19a18.js"
   ]
 }
