@@ -45,4 +45,10 @@ const Token = ({ token, onTap, onUntap, onAdd, onRemove }) => {
     )
 }
 
+Token.defaultProps = {
+    color: "lavendar",
+    untapped: 0,
+    tapped: 0
+}
+
 export default Token

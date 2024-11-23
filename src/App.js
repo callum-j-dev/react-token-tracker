@@ -2,8 +2,11 @@ import { useState } from 'react';
 //import Token from './components/Token';
 import Tokens from './components/Tokens';
 import Header from './components/Header';
+import AddToken from './components/AddToken';
 
 const App = ()=> {
+  const [showAddToken, setShowAddToken] = useState(false);
+  
   const defaultTokens = [
     {
       id: 1,
@@ -26,13 +29,41 @@ const App = ()=> {
       untapped: 0,
       tapped: 0
     },
+  ];
+
+  const colorArray = [
+    "antiquewhite",
+    "aquamarine",
+    "burlywood",
+    "darkcyan",
+    "coral",
+    "greenyellow",
+    "lavender",
+    "lemonchiffon",
+    "mediumorchid",
+    "salmon",
+    "steelblue",
+    "tomato"
   ]
 
+  const getRandomColor = () => {
+    const randInd = Math.floor(Math.random() * colorArray.length);
+
+    return colorArray[randInd];
+  }
+
   const [tokens, setTokens] = useState(defaultTokens);
-
-  // todo: Write tapping/untapping functions
-
-  //setTokens(defaultTokens);
+  
+  // Add new token type
+  const addTokenType = (token) => {
+    const id = Math.floor(Math.random() * 1000) + 1;
+    const newToken = {id, ...token};
+    newToken.tapped = 0;
+    newToken.untapped = 0;
+    newToken.color = getRandomColor();
+    setTokens([...tokens, newToken]);
+    console.log(tokens);
+  }
 
   // Tap and untap functions
   const tapToken = (id) => {
@@ -73,8 +104,9 @@ const App = ()=> {
 
   return (
     <div>
-      <Header title="Token Tracker" onClearAll={clearAll} onUntapAll={untapAll}/>
-      <div class="container">
+      <Header title="Token Tracker" onClearAll={clearAll} onUntapAll={untapAll} onAdd={() => setShowAddToken(!showAddToken)} showAdd={showAddToken}/>
+      {showAddToken && <AddToken onAdd={addTokenType} />}
+      <div className="container">
         <Tokens tokens={tokens} onUntap={untapToken} onTap={tapToken} onAdd={addToken} onRemove={removeToken} />
       </div>
       
