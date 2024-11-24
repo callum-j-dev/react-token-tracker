@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-token-tracker/static/css/main.601a6f7e.css",
-    "main.js": "/react-token-tracker/static/js/main.73e19a18.js",
+    "main.css": "/react-token-tracker/static/css/main.f55bdaec.css",
+    "main.js": "/react-token-tracker/static/js/main.9b584c6c.js",
     "static/js/453.a34a7d6f.chunk.js": "/react-token-tracker/static/js/453.a34a7d6f.chunk.js",
     "index.html": "/react-token-tracker/index.html",
-    "main.601a6f7e.css.map": "/react-token-tracker/static/css/main.601a6f7e.css.map",
-    "main.73e19a18.js.map": "/react-token-tracker/static/js/main.73e19a18.js.map",
+    "main.f55bdaec.css.map": "/react-token-tracker/static/css/main.f55bdaec.css.map",
+    "main.9b584c6c.js.map": "/react-token-tracker/static/js/main.9b584c6c.js.map",
     "453.a34a7d6f.chunk.js.map": "/react-token-tracker/static/js/453.a34a7d6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.601a6f7e.css",
-    "static/js/main.73e19a18.js"
+    "static/css/main.f55bdaec.css",
+    "static/js/main.9b584c6c.js"
   ]
 }
